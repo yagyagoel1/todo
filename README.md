@@ -8,3 +8,10 @@ It has the following features -
 Anyone can create a todo 
 Anyone can see their existing todos
 Anyone can mark a todo as done
+
+
+
+
+
+made using express and react and also other libraries that can be found in package.json 
+
