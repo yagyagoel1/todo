@@ -12,9 +12,9 @@ return <div>
         const value = e.target.value;
         setDescription(e.target.value);
     }} /><br />
-   {useEffect(()=>{
+   {
    <button style = 
-   {{padding :10,margin:10}} onClick = {()=>{
+   {{padding :10,margin:10}} onClick = {useEffect(()=>{()=>{
     fetch("http://localhost:3000/todo",{
         method : "POST",
         body :JSON.stringify({
@@ -27,9 +27,9 @@ return <div>
         }
     }).then (async function(res){
         const json  = await res.json();
-        alert(json.msg);
-    })
-   }}>
-    add a todo</button>},[])}
+        alert(json.msg)});
+    }},[])
+}>
+    add a todo</button>}
 </div>
 }
